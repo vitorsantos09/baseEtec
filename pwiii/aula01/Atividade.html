@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma</title>
+</head>
+<body>
+    
+    Numero 1: <input type="number" id="num1">
+    Numero 2: <input type="number" id="num2">
+    <button onclick='Soma()'>Somar</button>
+    <p id="resposta"></p>
+    <script>
+        function Soma(){
+            
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value); // cria a variavel num2 e converte o valor do input id para string, guardando o valor do id na variavel
+                var numMul = num1 + num2; 
+            document.getElementById("resposta").innerHTML=(numMul); // coloca o valor de numMul na propriedade de html para ser mostrado na tela, referenciando o p: id resposta
+        }
+    </script>
+</body>
+</html>
